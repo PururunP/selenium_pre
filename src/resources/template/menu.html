@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu Page</title>
+</head>
+
+<body>
+    <h1>メニュー画面</h1>
+
+    <span>入力</span>
+    <div>
+        <input type="text" id="input1">
+        <button type="button" id="button1" onclick="update()">更新</button>
+    </div>
+
+    <div>
+        <span>入力された値：</span>
+        <span id="output">「」</span>
+    </div><br>
+
+    <div>
+        <table border="1" style="border-collapse: collapse">
+            <tr>
+                <th>好きな人の特徴</th>
+            </tr>
+            <tr>
+                <td class="favoriteHuman">話すことが好き</td>
+            </tr>
+            <tr>
+                <td class="favoriteHuman">賢い、頭がいい</td>
+            </tr>
+            <tr>
+                <td class="favoriteHuman">趣味があう</td>
+            </tr>
+            <tr>
+                <td class="favoriteHuman">要領よくなんでもこなせる</td>
+            </tr>
+        </table>
+    </div>
+
+    <a href="index.html">戻る</a>
+
+    <script>
+        function update() {
+            var value = document.getElementById("input1").value;
+            document.getElementById("output").innerHTML = "「" + value + "」";
+        }
+    </script>
+
+</body>
+
+</html>
